@@ -1,0 +1,13 @@
+{
+  "name": "http-transmitter-api",
+  "version": "1.0.0",
+  "description": "HTTP Transmitter API for Build Logic Roblox game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "body-parser": "^1.20.2"
+  }
+}
