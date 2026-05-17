@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>status: [LOADING]</title>
-
-  <script>
-    // Change this to your target URL
-    const redirectURL = "https://bl-controller.onrender.com/panel";
-
-    // Redirect after a short delay
-    setTimeout(() => {
-      window.location.href = redirectURL;
-    }, 500); // 500ms = 0.5 seconds
-  </script>
+  <meta charset="utf-8">
+  <title>status: [online]</title>
 </head>
 <body>
-  Loading BL API...
+<h1>Build logic HTTP Transmitter Command Panel</h1>
+
+<h3>Day / Night</h3>
+<label><input type="radio" name="dayNight" value="day"> Day</label>
+<label><input type="radio" name="dayNight" value="night"> Night</label>
+<label><input type="radio" name="dayNight" value="auto"> Auto</label>
+
+<h3>Lights</h3>
+<label><input type="radio" name="light" value="on"> On</label>
+<label><input type="radio" name="light" value="off"> Off</label>
+<label><input type="radio" name="light" value="auto"> Auto</label>
+
+<h3>Door</h3>
+<label><input type="radio" name="door" value="open"> Open</label>
+<label><input type="radio" name="door" value="closed"> Closed</label>
+
+<h3>Auto Day/Night Cycle</h3>
+<select id="autoType">
+  <option value="interval">Interval</option>
+  <option value="utc">UTC</option>
+</select>
+<input id="interval" type="number" placeholder="Seconds">
+
+<br><br>
+<button onclick="save()">Save</button>
+
+<script src="panel.js"></script>
 </body>
 </html>
