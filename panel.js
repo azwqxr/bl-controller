@@ -26,7 +26,7 @@ async function save() {
     body: JSON.stringify(body)
   });
 
-  alert("Saved!");
+  alert("Choices Pushed To Build Logic!");
 }
 
 load();
