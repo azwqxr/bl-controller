@@ -26,7 +26,8 @@ async function save() {
     body: JSON.stringify(body)
   });
 
-  alert("Choices Pushed To Build Logic!");
+  alert("Choices pushed to Build Logic! Please power the GET node on the transmitter!");
+    console.log("Choices pushed to Build Logic!");
 }
 
 load();
